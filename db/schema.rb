@@ -21,8 +21,8 @@ ActiveRecord::Schema[7.2].define(version: 2024_09_16_131617) do
     t.string "summary"
     t.string "hangout_link"
     t.text "description"
-    t.datetime "start"
-    t.datetime "end"
+    t.datetime "start_time"
+    t.datetime "end_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_calendar_events_on_user_id"

@@ -16,8 +16,8 @@ class CalendarEventsController < ApplicationController
   def format_event(event)
     {
       title: event.summary,
-      start: event.start,
-      end: event.end,
+      start: event.start_time,
+      end: event.end_time,
       description: event.description,
       hangout_link: event.hangout_link
     }
