@@ -20,8 +20,8 @@ class GoogleCalendarService
           calendar_id: event['organizer']['email'],
           summary: event['summary'],
           description: event['description'],
-          start: event['start']['dateTime'],
-          end: event['end']['dateTime'],
+          start_time: event['start']['dateTime'],
+          end_time: event['end']['dateTime'],
           hangout_link: event['hangoutLink']
         )
       end

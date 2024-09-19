@@ -7,8 +7,8 @@ class CreateCalendarEvents < ActiveRecord::Migration[7.2]
       t.string :summary
       t.string :hangout_link
       t.text :description
-      t.datetime :start
-      t.datetime :end
+      t.datetime :start_time
+      t.datetime :end_time
 
       t.timestamps
     end
